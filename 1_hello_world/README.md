@@ -13,13 +13,13 @@ module.exports.hello = function() { return 'world'; };
 
 First we need to set up an npm-compatible package. Use `npm init` in a new directory to create the skeleton *package.json*.
 
-首先，我们需要设置一个npm兼容的包。使用`npm init`在新目录中创建纲要文件: package.json。
+首先，我们需要设置一个npm兼容的包。使用`npm init`在新目录中创建纲要文件 *package.json*。
 
 ### Step 2
 
 Next we need to install **[NAN](https://github.com/rvagg/nan)**. NAN will serve as a thin abstraction layer between the C++ code we write and the Node and V8 APIs so that we can target multiple versions of Node without worrying too much about the changing V8 or Node APIs. Run `npm install nan@latest --save` to install NAN and save it as a `"dependency"` in your *package.json*.
 
-接下来我们需要安装**[NAN](https://github.com/rvagg/nan)**。NAN(Native Abstractions for Node.js)将作为我们编写的C++代码与Node和V8 API之间的一个薄抽象层(原生抽象))，这样我们就可以定位多个版本的Node，而不必过多担心不断变化的V8或Node API。运行`npm install nan@latest --save`安装NAN并将它作为一个`"dependency"`保存在你的*package.json*中。
+接下来我们需要安装**[NAN](https://github.com/rvagg/nan)**。NAN(Native Abstractions for Node.js)将作为我们编写的C++代码与Node和V8 API之间的一个薄抽象层(原生抽象)，这样我们就可以定位多个版本的Node，而不必过多担心不断变化的V8或Node API。运行`npm install nan@latest --save`安装NAN并将它作为一个`"dependency"`保存在你的*package.json*中。
 
 ### Step 3
 
