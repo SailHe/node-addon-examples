@@ -1,7 +1,8 @@
 ## Example 1: *Hello world*
 
-To get started let's make a small addon which is the C++ equivalent of
-the following JavaScript code:
+To get started let's make a small addon
+which is the C++ equivalent of the following JavaScript code:
+要开始，让我们创建一个小插件，它是以下JavaScript代码的C ++等价物：
 
 ```js
 module.exports.hello = function() { return 'world'; };
@@ -10,6 +11,7 @@ module.exports.hello = function() { return 'world'; };
 ### Step 1
 
 First we need to set up an npm-compatible package. Use `npm init` in a new directory to create the skeleton *package.json*.
+首先，我们需要设置一个npm兼容的包。使用npm init在新目录中创建骨架的package.json。
 
 ### Step 2
 
