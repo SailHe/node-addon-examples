@@ -41,17 +41,19 @@
 // module.exports = app;
 
 // 这句的意思就是引入 `express` 模块，并将它赋予 `express` 这个变量等待使用。
-var express = require('express');
+const express = require('express');
 // 调用 express 实例，它是一个函数，不带参数调用时，会返回一个 express 实例，将这个变量赋予 app 变量。
-var app = express();
-var addon = require('helloAddon');
-var utility = require('utility');
+const app = express();
+const addon = require('helloAddon');
+const utility = require('utility');
 const cheerio = require('cheerio');
 const superagent = require('superagent');
-var eventproxy = require('eventproxy');
+const eventproxy = require('eventproxy');
 // url 模块是 Node.js 标准库里面的
 // http://nodejs.org/api/url.html
-var url = require('url');
+const url = require('url');
+// for use with Node-style callbacks...
+const async = require("async");
 
 
 // app 本身有很多方法，其中包括最常用的 get、post、put/patch、delete，
@@ -129,7 +131,7 @@ superagent.get(cnodeHomeUrl)
       // 具体请看 http://nodejs.org/api/url.html#url_url_resolve_from_to 的示例
       const href = url.resolve(cnodeHomeUrl, $element.attr('href'));
       topicUrls.push(href);
-      if (idx == 0) {
+      if (idx == 2) {
         return false;
       }
     });
