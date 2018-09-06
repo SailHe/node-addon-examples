@@ -168,10 +168,7 @@ superagent.get(cnodeHomeUrl)
             ep.emit('topic_score1', [author1Url, res.text, resultElement]);
           }
         });
-        /*return (result);*/
       });
-      //console.log('final:');
-      //console.log(topics);
     });
 
     ep.after('topic_score1', topicUrls.length, (authorPairList) => {
